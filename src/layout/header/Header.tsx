@@ -1,10 +1,10 @@
+import { FC } from "react";
 import {
   createStyles,
   Header as MantineHeader,
   Group,
   Container,
   Box,
-  Image,
 } from "@mantine/core";
 
 import CompanyDropdown from "../../features/company-dropdown/components/CompanyDropdown";
@@ -34,14 +34,14 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export default function Header() {
+const Header: FC = () => {
   const { classes } = useStyles();
 
   return (
     <MantineHeader height={60} className={classes.header} mb={80}>
       <Container size="xl">
         <Box className={classes.inner}>
-          <Image src={LogoImage} alt="logo" className={classes.logo} />
+          <img src={LogoImage} alt="logo" className={classes.logo} />
           <Group spacing={2}>
             <CompanyDropdown />
           </Group>
@@ -49,4 +49,6 @@ export default function Header() {
       </Container>
     </MantineHeader>
   );
-}
+};
+
+export default Header;
