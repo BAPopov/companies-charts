@@ -23,7 +23,7 @@ The project is Create-React-App Typescript Redux template. All the requests and 
 
 The UI component library of choice was Mantine since it is lightweight and easy to integrate right out of the box.
 
-The charts are handled by Highcharts React wrapper which is one of the biggest and maybe most complicated chart libraries and I would consider it an overkill for this project
+The charts are handled by Highcharts React wrapper. There are some neat out of the box features displayed here like Zooming in on the are of the chart on left click drag. However Highcharts is one of the biggest and maybe most complicated chart libraries and I would consider it an overkill for this project
 but since I'm very familiar with it I decided it to use it.
 
 ## Available Scripts
