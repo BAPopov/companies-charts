@@ -5,13 +5,22 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Setup and run the application
 
 * Install Dependencies
-The default package manager for the project is yarn if you prefer NPM, remove the yarn.lock file first
+The default package manager for the project is yarn if you prefer NPM, remove the .lock file first
     ```bash
     yarn or npm i
     ```
 * Copy `.env.example` into `.env` and alter the secrets there are SUGGESTED secrets inside of the example env file
     ```bash
     cp .env.example .env
+
+## Technologies 
+
+The project is Create-React-App Typescript Redux template. All the request and state is handled with ReduxToolkit as well as RTK Query which provides request caching out of the box which could be beneficial for this use case.
+
+The UI component library of choice was Mantine since it is lightweight and easy to integrate right out of the box.
+
+The charts are handled by Highcharts React wrapper which is one of the biggest and maybe most complicated chart libraries and I would consider it an overkill for this project
+but since I'm very familiar with it I decided it to use it.
 
 ## Available Scripts
 
