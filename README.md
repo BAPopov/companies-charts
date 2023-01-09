@@ -1,29 +1,37 @@
-# Getting Started with Create React App
+# Interview App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
 
-# Setup and run the application
+## Getting Started
 
 * clone [this](https://github.com/BAPopov/companies-charts.git) repository
+
     ```bash
     git clone https://github.com/BAPopov/companies-charts.git
     ```
+
 * Install Dependencies
 The default package manager for the project is yarn if you prefer NPM, remove the .lock file first
+
     ```bash
     yarn or npm i
     ```
-* Copy `.env.example` into `.env` and alter the secrets there are SUGGESTED secrets inside of the example env file
+
+* Copy `.env.example` into `.env` and alter the secrets. There are suggested secrets inside of the `.env.example` file
+
     ```bash
     cp .env.example .env
+    ```
 
-## Technologies 
+## Technologies
 
-The project is Create-React-App Typescript Redux template. All the requests and state is handled by ReduxToolkit as well as RTK Query that comes with request caching out of the box which could be beneficial for this use case.
+All the requests and state is handled by ReduxToolkit as well as RTK Query that comes with request caching out of the box which could be beneficial for this use case.
 
 The UI component library of choice was Mantine since it is lightweight and easy to integrate right out of the box.
 
-The charts are handled by Highcharts React wrapper. There are some neat out of the box features displayed here like Zooming in on the are of the chart on left click drag. However Highcharts is one of the biggest and maybe most complicated chart libraries and I would consider it an overkill for this project
+The charts are handled by Highcharts React wrapper. There are some neat out of the box features displayed here like zooming in on the area of the chart on left click drag. 
+
+However Highcharts is one of the biggest and maybe most complicated chart libraries and I would consider it an overkill for this project
 but since I'm very familiar with it I decided it to use it.
 
 ## Available Scripts

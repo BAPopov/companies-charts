@@ -20,8 +20,6 @@ const initialState: DropdownState = {
     }
 };
 
-
-
 export const companyDropdownSlice = createSlice({
     name: 'companyDropdown',
     initialState,
@@ -38,8 +36,5 @@ export const { setSelectedCompany } = companyDropdownSlice.actions;
 export const selectSelectedCompany = (state: RootState) => state.companyDropdown.selectedCompany;
 
 export const selectSelectedCompanyValue = (state: RootState) => state.companyDropdown.selectedCompany.value;
-
-
-
 
 export default companyDropdownSlice.reducer;

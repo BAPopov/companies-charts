@@ -1,6 +1,8 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+
 import { api } from '../services/api';
 import selectedCompanyReducer from '../features/company-dropdown/companyDropdownSlice';
+
 export const store = configureStore({
   reducer: {
     [api.reducerPath]: api.reducer,
