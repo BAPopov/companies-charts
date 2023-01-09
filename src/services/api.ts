@@ -15,7 +15,7 @@ export const api = createApi({
                     id: item.id,
                     value: item.dataset_code,
                     label: item.name.startsWith("Untitled Dataset") ? item.dataset_code : item.name,
-                }));
+                })).sort((a, b) => a.label.localeCompare(b.label));
             },
         }),
 
