@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Select, Loader } from "@mantine/core";
+import { Select, Loader, createStyles } from "@mantine/core";
 
 import { useAppSelector, useAppDispatch } from "../../../redux/hooks";
 import { useGetCompaniesQuery } from "../../../services/api";
@@ -9,7 +9,17 @@ import {
   SelectedCompany,
 } from "../companyDropdownSlice";
 
+const useStyles = createStyles((theme) => ({
+  selectSize: {
+    minWidth: "320px",
+    [theme.fn.smallerThan("sm")]: {
+      minWidth: "260px",
+    },
+  },
+}));
+
 const CompanyDropdown: FC = () => {
+  const { classes } = useStyles();
   const dispatch = useAppDispatch();
   const selectedValue = useAppSelector(selectSelectedCompanyValue);
 
@@ -35,6 +45,7 @@ const CompanyDropdown: FC = () => {
       onChange={handleChange}
       searchable
       rightSection={(isFetching || isLoading) && <Loader size="xs" />}
+      className={classes.selectSize}
     />
   );
 };
