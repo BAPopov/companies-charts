@@ -4,6 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Setup and run the application
 
+* clone [this](https://github.com/BAPopov/companies-charts.git) repository
+    ```bash
+    git clone https://github.com/BAPopov/companies-charts.git
+    ```
 * Install Dependencies
 The default package manager for the project is yarn if you prefer NPM, remove the .lock file first
     ```bash
