@@ -5,8 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Setup and run the application
 
 * Install Dependencies
+The default package manager for the project is yarn if you prefer NPM, remove the yarn.lock file first
     ```bash
-    yarn
+    yarn or npm i
     ```
 * Copy `.env.example` into `.env` and alter the secrets there are SUGGESTED secrets inside of the example env file
     ```bash
