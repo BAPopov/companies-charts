@@ -19,7 +19,7 @@ The default package manager for the project is yarn if you prefer NPM, remove th
 
 ## Technologies 
 
-The project is Create-React-App Typescript Redux template. All the request and state is handled with ReduxToolkit as well as RTK Query which provides request caching out of the box which could be beneficial for this use case.
+The project is Create-React-App Typescript Redux template. All the requests and state is handled by ReduxToolkit as well as RTK Query that comes with request caching out of the box which could be beneficial for this use case.
 
 The UI component library of choice was Mantine since it is lightweight and easy to integrate right out of the box.
 
