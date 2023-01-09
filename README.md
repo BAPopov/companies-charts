@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
 
+# Setup and run the application
+
+* Install Dependencies
+    ```bash
+    yarn
+    ```
+* Copy `.env.example` into `.env` and alter the secrets there are SUGGESTED secrets inside of the example env file
+    ```bash
+    cp .env.example .env
+
 ## Available Scripts
 
 In the project directory, you can run:
